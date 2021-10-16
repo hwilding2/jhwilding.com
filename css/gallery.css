@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    /* font-family: 'Raleway', sans-serif; */
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.logo {
+    max-width: 3em;
+}
+
+.bg-custom {
+    background-image: linear-gradient( #5C2018, rgba(0,0,0,0.2));
+}
+
+.bg-custom-dark {
+    background-color: #5C2018;
+}
+
+.life-body {
+    background: url(../img/canyon.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.life-title {
+    text-align: center;
+    font-size: 2em;
+    padding:2em;
+}
+
+.container {
+    padding: 2em;
+    background-color: #F3E0DC;
+}
+
+.title {
+    background-color: #F3E0DC;
+    color: #5C2018;
+    padding: 2vh;
+    border-radius: 1em;
+}
+
+ .story-rule {
+    border-top: 1em solid rgba(66, 133, 244, 0.5);
+    border-radius: 2em;
+} 
+  
+  /* Mobile Styles */
+  @media only screen and (max-width: 500px) {
+    .container {
+        margin: 0em;
+    }
+
+    .footer {
+        flex-shrink: 0;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 501px) and (max-width: 960px) {
+    
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    
+  }

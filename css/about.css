@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    /* font-family: 'Raleway', sans-serif; */
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.logo {
+    max-width: 3em;
+}
+
+.bg-custom {
+    background-image: linear-gradient( #5C2018, rgba(0,0,0,0.2));
+}
+
+.bg-custom-dark {
+    background-color: #5C2018;
+}
+
+.about-body {
+    background: url(../img/gorge.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    padding: 2em;
+    background-color: #F3E0DC;
+}
+
+.title {
+    background-color: #F3E0DC;
+    color: #5C2018;
+    padding: 2vh;
+    border-radius: 1em;
+}
+
+.about-photo {
+    filter: brightness(140%);
+    padding: 2em 0em;
+    margin: auto;
+}
+
+.about-title {
+    padding: 1em 0em;
+}
+    
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-text {
+    font-size: small;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    display:block;
+    z-index:999;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+  
+  /* Mobile Styles */
+  @media only screen and (max-width: 500px) {
+    .title {
+        font-size: 2.5em;
+        width: 100%;
+        margin: 3em 0em;
+    }
+
+    .container {
+        margin: 0em;
+    }
+
+    .about-photo {
+        max-width: 100%;
+    }
+
+    .footer {
+        flex-shrink: 0;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 501px) and (max-width: 960px) {
+    .title {
+        font-size: 2.5em;
+        width: 100%;
+        margin: 3em 0em;
+    }
+
+    .about-photo {
+        max-width: 250px;
+        margin: auto;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section-text {
+        padding-left: 2em;
+        font-size: small;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    .about-photo {
+        max-width: 350px;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .section-text {
+        padding-left: 2em;
+        font-size: initial;
+    }
+  }
